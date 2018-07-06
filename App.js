@@ -25,9 +25,9 @@ export default createBottomTabNavigator ({
   Explore: {
     screen: Explore,
     navigationOptions: {
-      tabBarLabel: 'EXPLORE',
+      tabBarLabel: 'PLANS',
       tabBarIcon: ({tintColor}) => (
-        <Icon name="ios-search-outline" 
+        <Icon name="ios-calendar-outline" 
         color={tintColor}
         size={24} />
       )
@@ -36,9 +36,9 @@ export default createBottomTabNavigator ({
   Saved: {
     screen: Saved,
     navigationOptions: {
-      tabBarLabel: 'SAVED',
+      tabBarLabel: 'HOME',
       tabBarIcon: ({tintColor}) => (
-        <Icon name="ios-heart-outline" 
+        <Icon name="ios-home-outline" 
         color={tintColor}
         size={24} />
       )
@@ -47,10 +47,11 @@ export default createBottomTabNavigator ({
   Trips: {
     screen: Trips,
     navigationOptions: {
-      tabBarLabel: 'TRIPS',
+      tabBarLabel: 'WORKOUTS',
       tabBarIcon: ({tintColor}) => (
-        <Image source={require('./assets/airbnb.png')}
-        style={{ height: 24, width:24, tintColor: tintColor }} />
+        <Icon name="ios-heart-outline" 
+        color={tintColor}
+        size={24} />
       )
     }
   },

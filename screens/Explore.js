@@ -78,7 +78,7 @@ class Explore extends Component {
               <Icon name="ios-search" size={20} style={{ marginRight: 10 }} />
               <TextInput
                 underlineColorAndroid="transparent"
-                placeholder="Try Mumbai"
+                placeholder="Try Abs"
                 placeholderTextColor="grey"
                 style={{ flex: 1, fontWeight: "700", backgroundColor: "white" }}
               />
@@ -92,8 +92,8 @@ class Explore extends Component {
                 opacity: this.animatedOpacity
               }}
             >
-              <Tag name="Guests" />
-              <Tag name="Dates" />
+              <Tag name="Beginner" />
+              <Tag name="Abs" />
             </Animated.View>
           </Animated.View>
 
@@ -115,7 +115,7 @@ class Explore extends Component {
                   paddingHorizontal: 20
                 }}
               >
-                What can we help you find, Ankush?
+                What's your Goal, Chetan?
               </Text>
               <View style={{ height: 130, marginTop: 20 }}>
                 <ScrollView
@@ -123,16 +123,16 @@ class Explore extends Component {
                   showsHorizontalScrollIndicator={false}
                 >
                   <Category
-                    imageUri={require("../assets/home.jpg")}
-                    name="Home"
+                    imageUri={require("../assets/gym.jpg")}
+                    name="Muscle"
                   />
                   <Category
-                    imageUri={require("../assets/experiences.jpg")}
-                    name="Experiences"
+                    imageUri={require("../assets/hiit.jpg")}
+                    name="Fitness"
                   />
                   <Category
-                    imageUri={require("../assets/restaurant.jpg")}
-                    name="Restaurant"
+                    imageUri={require("../assets/yoga.jpeg")}
+                    name="Peace"
                   />
                 </ScrollView>
               </View>
@@ -144,10 +144,10 @@ class Explore extends Component {
                     fontWeight: "700"
                   }}
                 >
-                  Introducing Airbnb Plus
+                  Introducing Fitness Plus
                 </Text>
                 <Text style={{ fontWeight: "100", marginTop: 10 }}>
-                  A new selection of homes verified for quality and comfort
+                  A unique fitness and Diet plan for everyone
                 </Text>
 
                 <View style={{ width: width - 40, height: 200, marginTop: 20 }}>
@@ -161,14 +161,14 @@ class Explore extends Component {
                       borderColor: "#ddd",
                       borderWidth: 1
                     }}
-                    source={require("../assets/home.jpg")}
+                    source={require("../assets/gym.jpg")}
                   />
                 </View>
               </View>
             </View>
             <View style={{ marginTop: 40, paddingHorizontal: 20 }}>
               <Text style={{ fontSize: 24, fontWeight: "700" }}>
-                Homes around the world
+                Our Fitness Plans
               </Text>
               <View
                 style={{
@@ -180,24 +180,27 @@ class Explore extends Component {
               >
                 <Home
                   width={width}
-                  name="The Cozy Place"
-                  type="PRIVATE ROOM - 2 BEDS"
+                  name="HIIT Full Body"
+                  type="45,950 joined and counting"
                   price={82}
                   rating={3}
+                  imageUri={require('../assets/hiit.jpg')}
                 />
                 <Home
                   width={width}
-                  name="The Special Place"
-                  type="SINGLE ROOM - 2 BEDS"
+                  name="Muscle building"
+                  type="77,191 joined and counting"
                   price={72}
                   rating={4}
+                  imageUri={require('../assets/gym.jpg')}
                 />
                 <Home
                   width={width}
-                  name="The Luxurious Suite"
-                  type="DELUXE ROOM - 2 BEDS"
+                  name="The Inner peace"
+                  type="91,890 joined and counting"
                   price={99}
                   rating={5}
+                  imageUri={require('../assets/yoga.jpeg')}
                 />
               </View>
             </View>
